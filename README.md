@@ -9,5 +9,5 @@ Las orientaciones específicas del [Metadata Schema](https://v2.sherpa.ac.uk/api
 ### Directorios
 
 `/DataFrame`: Dentro se pueden encontrar los códigos en Python y los export asociados:
-- `/DataFrame/import-repositories.py` crea el dataframe completo llamando a la API de Sherpa y filtrando específicamente que sean repositorios: `item-type`: `repository`. Se excluyen los demás `item-type`: 'funder', 'funder_group', 'publisher', 'publisher_policy', 'publication'.
+- `/DataFrame/import-repositories.py` crea el dataframe completo llamando a la API de Sherpa y filtrando específicamente que sean repositorios: `item-type`: `repository`. Se excluyen los demás `item-type`: `funder`, `funder_group`, `publisher`, `publisher_policy`, `publication`.
 - `/DataFrame/dataframe.csv` es el archivo exportado de `/DataFrame/import-repositories.py`.

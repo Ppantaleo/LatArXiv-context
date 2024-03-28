@@ -41,5 +41,9 @@ Se incluyen los `content_types`: `datasets` y `theses_and_dissertations`. La ide
 - `/DataFrame/DataSets/top5-lat-esp-datasets.py` crea la tabla que filtra países de Latinoamérica más España en `/DataFrame/dataframe-enriquecido.csv` y filtra los 5 repositorios con mayor número de contenido depositado en cada país según el valor en `metadata_record_count`. A su vez, el valor arrojado se ordena de mayor a menor y en orden de países según se muestra en `/DataFrame/DataSets/tabla-lat-esp-datasets.html` y se mantiene el filtro de `content_types` específico para DataSets.
 - `/DataFrame/DataSets/top5-lat-esp-datasets.html` es el archivo exportado de `/DataFrame/DataSets/top5-lat-esp-datasets.py`.
 
+## Notas metodológicas
+
+Los códigos Python fueron realizados con la ayuda de ChatGPT, corridos en local, testeados y modificados para la correcta realización. Finalmente, se cargan en GitHub.
+
 
 

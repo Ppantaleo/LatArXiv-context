@@ -24,6 +24,22 @@ El material que aquí se encuentra muestra una primera aproximación generalista
 
 ##### /DataFrame/PrePrints
 
+Se incluyen los `content_types`: `journal_articles`, `bibliographic_references`, `conference_and_workshop_papers` y `unpub_reports_and_working_papers`. No se identifican facilmente los servidores PrePrints en OpenDOAR. Se tomo el criterio de búsqueda por la palabra "preprint" en el búscador web y se indentificaron los repositorios existentes con ese criterio. Se puede [https://v2.sherpa.ac.uk/cgi/search/repository/advanced?screen=Search&repository_name_merge=ALL&repository_name=preprint&repository_org_name_merge=ALL&repository_org_name=&content_types_merge=ANY&content_subjects_merge=ANY&org_country_browse_merge=ALL&org_country_browse=&satisfyall=ALL&order=preferred_name&_action_search=Search](reproducir la segmentación aquí). En base a esto, los 7 resultados de la búsqueda por nombre tienen como `content_types` los seleccionados aquí. 
+
+- `/DataFrame/PrePrints/tabla-lat-esp-preprints.py` crea una tabla que filtra `/DataFrame/dataframe-enriquecido.csv` por países de Latinoamérica más España y los ordena acorde a la cantidad de repositorios registrados en Sherpa, de mayor a menor. Adicionalmente, se mapea todos los identificadores de los países para colocar una etiqueta legible a cada una. Se incluyen solo los que tengan al menos una coinicidencia con `content_types`: `journal_articles`, `bibliographic_references`, `conference_and_workshop_papers` o `unpub_reports_and_working_papers`.
+- `/DataFrame/PrePrints/tabla-lat-esp-preprints.html` es el archivo exportado de `/DataFrame/PrePrints/tabla-lat-esp-preprints.py`.
+- `/DataFrame/PrePrints/top5-lat-esp-preprints.py` crea la tabla que filtra países de Latinoamérica más España en `/DataFrame/dataframe-enriquecido.csv` y filtra los 5 repositorios con mayor número de contenido depositado en cada país según el valor en `metadata_record_count`. A su vez, el valor arrojado se ordena de mayor a menor y en orden de países según se muestra en `/DataFrame/PrePrints/tabla-lat-esp-preprints.html` y se mantiene el filtro de `content_types` específico para PrePrints.
+- `/DataFrame/PrePrints/top5-lat-esp-preprints.html` es el archivo exportado de `/DataFrame/PrePrints/top5-lat-esp-preprints.py`.
+
 
 ##### /DataFrame/DataSets
+
+Se incluyen los `content_types`: `datasets` y `theses_and_dissertations`. La identificación de esta tipología es más clara en OpenDOAR que para PrePrints.
+
+- `/DataFrame/DataSets/tabla-lat-esp-datasets.py` crea una tabla que filtra `/DataFrame/dataframe-enriquecido.csv` por países de Latinoamérica más España y los ordena acorde a la cantidad de repositorios registrados en Sherpa, de mayor a menor. Adicionalmente, se mapea todos los identificadores de los países para colocar una etiqueta legible a cada una. Se incluyen solo los que tengan al menos una coinicidencia con `content_types`: `datasets` o `theses_and_dissertations`.
+- `/DataFrame/DataSets/tabla-lat-esp-datasets.html` es el archivo exportado de `/DataFrame/DataSets/tabla-lat-esp-datasets.py`.
+- `/DataFrame/DataSets/top5-lat-esp-datasets.py` crea la tabla que filtra países de Latinoamérica más España en `/DataFrame/dataframe-enriquecido.csv` y filtra los 5 repositorios con mayor número de contenido depositado en cada país según el valor en `metadata_record_count`. A su vez, el valor arrojado se ordena de mayor a menor y en orden de países según se muestra en `/DataFrame/DataSets/tabla-lat-esp-datasets.html` y se mantiene el filtro de `content_types` específico para DataSets.
+- `/DataFrame/DataSets/top5-lat-esp-datasets.html` es el archivo exportado de `/DataFrame/DataSets/top5-lat-esp-datasets.py`.
+
+
 
